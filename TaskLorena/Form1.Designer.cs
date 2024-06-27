@@ -55,6 +55,7 @@
             this.create_table.TabIndex = 0;
             this.create_table.Text = "Создать таблицу";
             this.create_table.UseVisualStyleBackColor = true;
+            this.create_table.Click += new System.EventHandler(this.create_table_Click);
             // 
             // cost_calculation
             // 
