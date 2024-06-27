@@ -65,6 +65,7 @@
             this.cost_calculation.TabIndex = 1;
             this.cost_calculation.Text = "Выполнить расчет стоимости";
             this.cost_calculation.UseVisualStyleBackColor = true;
+            this.cost_calculation.Click += new System.EventHandler(this.cost_calculation_Click);
             // 
             // desc_text_1
             // 
