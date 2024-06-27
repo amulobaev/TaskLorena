@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskLorena", "TaskLorena\TaskLorena.csproj", "{EC356A0E-FD74-4804-B519-5BC2519E2E33}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskLorenaTest", "TaskLorenaTest\TaskLorenaTest.csproj", "{CAF89CB3-FCE9-496B-8D88-4EBD1DBE19F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EC356A0E-FD74-4804-B519-5BC2519E2E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC356A0E-FD74-4804-B519-5BC2519E2E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC356A0E-FD74-4804-B519-5BC2519E2E33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAF89CB3-FCE9-496B-8D88-4EBD1DBE19F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAF89CB3-FCE9-496B-8D88-4EBD1DBE19F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAF89CB3-FCE9-496B-8D88-4EBD1DBE19F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAF89CB3-FCE9-496B-8D88-4EBD1DBE19F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
