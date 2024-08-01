@@ -1,0 +1,30 @@
+﻿<Window x:Class="TaskLorena.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskLorena"
+        xmlns:viewModels="clr-namespace:TaskLorena.ViewModels"
+        mc:Ignorable="d"
+        Title="Тестовое задание" Height="450" Width="800"
+        d:DataContext="{d:DesignInstance viewModels:MainViewModel}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <ToolBar Grid.Row="0" Margin="0,0,0,4">
+            <Button Command="{Binding Path=CalculateCommand}">Расчёт</Button>
+        </ToolBar>
+
+        <DataGrid Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" ItemsSource="{Binding Path=Items}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=Id}" Header="ID" IsReadOnly="True" />
+                <DataGridTextColumn Binding="{Binding Path=Name}" Header="Имя" IsReadOnly="True" />
+                <DataGridTextColumn Binding="{Binding Path=Price}" Header="Цена" IsReadOnly="True" />
+                <DataGridTextColumn Binding="{Binding Path=CalculatedPrice}" Header="Результат" IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
